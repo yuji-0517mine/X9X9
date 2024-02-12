@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  background-color: rgb(121, 117, 160);
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", 'ＭＳ Ｐゴシック', 'Osaka', sans-serif;
+}
+
+#container {
+  width: 918px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#header {
+  width: 898px;
+  margin: 0 auto;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#nav ul {
+  padding: 0 1px;
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  margin: 4px 0 10px 0;
+}
+
+#nav li {
+  flex: 1;
+  border-style: solid;
+  border-color: lightblue;
+  font-weight: bold;
+  padding: 4px;
+}
+
+#main {
+  margin: 0 10px 10px 10px;
+  display: flex;
+}
+
+#content {
+  width: 468px;
+  margin: 0 10px;
+  order: 2;
+}
+
+#content {
+  width: 468px;
+  margin: 0 10px;
+  order: 2;
+}
+
+.site-desctiption {
+  margin: 0 0 10px 0;
+  border: solid 1px lightblue;
+}
+
+.site-desctiption h2 {
+  margin: 0;
+  padding: 6px;
+  background-color: lightblue;
+}
+
+.site-desctiption p {
+  margin: 16px 8px;
+  text-indent: 1em;
+}
+
+.ad1 {
+  margin-bottom: 10px;
+}
+
+.maincontents {
+  margin-bottom: 10px;
+  border: solid 1px bisque;
+}
+
+.maincontents h3 {
+  margin: 0;
+  padding: 6px;
+  background-color: bisque;
+}
+
+.maincontents-lists {
+  margin: 12px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.maincontents-lists li {
+  width: 50%;
+}
+
+#submenu {
+  width: 160px;
+  order: 1;
+}
+
+.subcontents {
+  margin: 0 0 10px 0;
+  border: solid 1px lightblue;
+}
+
+.subcontents h3 {
+  margin: 0;
+  padding: 6px;
+  background-color: lightblue;
+}
+
+.subcontents-lists{
+  margin: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.ad2 {
+  margin-bottom: 10px;
+}
+
+#topic {
+  width: 250px;
+  order: 3;
+}
+
+.ad3 {
+  margin-bottom: 10px;
+}
+
+#topic {
+  width: 250px;
+  order: 3;
+}
+
+.topiccontents, .news {
+  margin: 0 0 10px 0;
+  border: solid 1px lightblue;
+}
+
+.topiccontents h3, .news h3 {
+  margin: 0;
+  padding: 6px;
+  background-color: lightblue;
+}
+
+.topiccontents p {
+  margin: 16px 8px;
+  text-indent: 1em;
+}
+
+.news dl {
+  margin: 8px 0px;
+  padding: 0px 4px;
+}
+
+.news dd {
+  margin: 0 6px 8px 6px;
+}
+
+#footer {
+  border-top: solid 1px lightgray;
+  padding-bottom: 10px;
+}
+
+#footer ul {
+  text-align: center;
+}
+
+#footer ul li {
+  padding: 0 4px;
+  display: inline;
+}
+
+#footer p {
+  text-align: center;
+}
