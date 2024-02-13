@@ -1,16 +1,4 @@
 <?php
-if($error_message) {
-	echo $error_message;
-}
-?>
-
-<form action="index.php" method="POST">
-	<p>ログインID：<input type="text" name="user_name"></p>
-	<p>パスワード：<input type="password" name="password"></p>
-	<input type="submit" name="login" value="ログイン">
-</form>
-
-<?php
 session_start();
 
 $error_message = "";
