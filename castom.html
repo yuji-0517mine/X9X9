@@ -36,29 +36,42 @@
     </header>
         
 <style>
-  #errorMessage {
-    color: red;
-  }
-</style>
-<form>
-  <div id="errorMessage"></div>
-  <label for="name">           ID:</label>
-  <input name="name" id="name" required><br>
-  <label for="password">パスワード:</label>
-  <input type="password" name="password" id="password" required><br>
-  <input type="submit" value="認証">
-</form>
-<script>
-  var form = document.forms[0];
-  form.onsubmit = function() {
-    // エラーメッセージをクリアする
-    form.password.setCustomValidity("");
-  };
-  // 入力値チェックエラーが発生したときの処理
-  form.addEventListener("invalid", function() {
-    document.getElementById("errorMessage").innerHTML = "入力値にエラーがあります";
-  }, false);
-</script>
+<div>
+        <!--フォーム-->
+        <form name="login_form">
+            <center>
+                <h1 class="contact-title">ログイン</h1>
+                <p>ID, Passwordご入力の上, 「認証」ボタンをクリックしてください.</p>
+            </center>
+            <div>
+
+                <center>
+                    <div>
+                        <input type="id" name="id" placeholder="ID">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
+                    </div>
+                </center>
+
+            </div>
+            <button type="button" onClick="nextPage();">認証</button>
+        </form>
+
+        <!--ログイン処理-->
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                id = document.login_form.id.value
+                pwd = document.login_form.pass.value;
+                location.href = id + pwd + ".html";
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
             
     </article>
         
