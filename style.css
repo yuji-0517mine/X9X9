@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "RiiPopkkR.otf";
+  src: url("./RiiPopkkR.otf") format("opentype");
+}
+
 body {
   margin: 0;
   background-color: rgb(121, 117, 160);
-  font-family: "RiiPopkkR.otf";
 }
 
 #container {
