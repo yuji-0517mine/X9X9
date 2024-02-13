@@ -35,20 +35,11 @@
     <p>認証が必要です</p>
     </header>
     
- <!-- ここより下がPHPの処理対象 -->
-    <?  // ← php.iniのshort_open_tagをOnにすると利用できる
-        
-        echo 'ここには本文が表示されます。';
-        
-        $val1 = 2;
-        $val2 = 4;
-        $sum = $val1 + $val2;
- 
-        echo $val1." + ".$val2." = ".$sum;
-    
-    ?>
-    <!-- ここより上がPHPの処理対象 -->
-    
+<?php
+    require_once('common.php');
+    print_calendar();
+?>
+
     </article>
         
         <aside id="submenu">
