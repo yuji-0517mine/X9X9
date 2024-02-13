@@ -46,8 +46,6 @@
   <input name="name" id="name" required><br>
   <label for="password">パスワード:</label>
   <input type="password" name="password" id="password" required><br>
-  <label for="passwordConfirm">パスワード（確認）:</label>
-  <input type="password" name="passwordConfirm" id="passwordConfirm" required><br>
   <input type="submit" value="認証">
 </form>
 <script>
@@ -55,11 +53,6 @@
   form.onsubmit = function() {
     // エラーメッセージをクリアする
     form.password.setCustomValidity("");
-    // パスワードの一致確認
-    if (form.password.value != form.passwordConfirm.value) {
-      // 一致していなかったら、エラーメッセージを表示する
-      form.password.setCustomValidity("パスワードと確認用パスワードが一致しません");
-    }
   };
   // 入力値チェックエラーが発生したときの処理
   form.addEventListener("invalid", function() {
