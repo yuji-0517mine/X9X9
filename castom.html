@@ -35,15 +35,19 @@
     <p>認証が必要です</p>
     </header>
     
-    <section class="maincontents">
-    <h3>ログイン</h3>
-<form action="//www-creators.com/rsc/receiver.php" method="post">
-  <label> 管理者ID</label><br>
-  <input type="email" name="email-address" value="" placeholder="IDを入力"><br>
-  <label> パスワード</label><br>
-  <input type="password" name="passward" value="" maxlength="8" placeholder="パスワードを入力">
-</form>
-    </section>
+ <!-- ここより下がPHPの処理対象 -->
+    <?  // ← php.iniのshort_open_tagをOnにすると利用できる
+        
+        echo 'ここには本文が表示されます。';
+        
+        $val1 = 2;
+        $val2 = 4;
+        $sum = $val1 + $val2;
+ 
+        echo $val1." + ".$val2." = ".$sum;
+    
+    ?>
+    <!-- ここより上がPHPの処理対象 -->
     
     </article>
         
