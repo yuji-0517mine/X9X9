@@ -35,19 +35,15 @@
     <p>認証が必要です</p>
     </header>
     
-<?php
-if($_POST["pass"] == "KanureX0"){
-  header('Location: Ocustom.html');
-exit;
-}
-?>
-
-    <h2>管理者確認</h2>
-<form method="POST" action="">
-   <label>パスワードを入力してください</label></br>
-      <input type="text" name="pass" value=""></br></br>
-      <input type="submit" value="ログイン">
-</form>
+<div class="signin">
+    <form action="" method="POST">
+        <label for="signin-id">管理番号</label>
+        <input id="signin-id" name="username" type="text" placeholder="ID">
+        <label for="signin-pass">パスワード</label>
+        <input id="signin-pass" name="password" type="text" placeholder="パスワード">
+        <button name="signin" type="submit">ログインする</button>
+    </form>
+</div>
             
     </article>
         
