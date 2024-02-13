@@ -36,18 +36,30 @@
     </header>
     
 <?php
-if($error_message) {
-    echo $error_message;
+if($_POST["pass"] == "manager"){
+  header('Location: login_success_manager.php');
+exit;
+}
+if($_POST["pass"] == "user"){
+    header('Location: login_success_users.php');
+exit;
 }
 ?>
- 
-<form action="index.php" method="POST">
-    <p>ログインID：<input type="text" name="user_name"></p>
-    <p>パスワード：<input type="password" name="password"></p>
-    <input type="submit" name="login" value="ログイン">
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>ログイン</title>
+  <link rel="stylesheet" href="css/test.css" type="text/css">
+ </head>
+ <body>
+    <h1>ログインページ</h1>
+    <h2>ログイン</h2>
+<form method="POST" action="">
+   <label>パスワード入力してください</label></br>
+      <input type="text" name="pass" value=""></br></br>
+      <input type="submit" value="ログイン">
 </form>
-
-
+            
     </article>
         
         <aside id="submenu">
