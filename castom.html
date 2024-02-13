@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head> 
+<link rel="stylesheet" href="./style.css">
+<meta charset="utf-8">
+<meta name="description" content="作者Xのホームページです">
+<title>作者Xのホームページ</title>
+</head>
+
+<body>
+
+    <div id="container">
+    
+    <header id="header">
+    
+    <h1><a href="index.html"><img src="title.png" alt="作者Xのホームページ"></a></h1>
+    
+    <img src="hedder.png" alt="作者Xヘッダー">
+    
+    <nav id="nav">
+    <ul>
+    <li><a href="picture.html">イラスト</a></li>
+    <li><a href="making.html">メイキング</a></li>
+    <li><a href="lastupload.html">更新情報</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+    </nav>
+
+    <main role="main" id="main">
+
+        <article id="content">
+        
+<header class="site-desctiption">
+    <h2>カテゴリー</h2>
+    <p>カテゴリー別の投稿が見れます。</p>
+    </header>
+    
+    <section class="maincontents">
+    <h3>管理者確認ページ</h3>
+  
+    </section>
+
+            <form name="login_form">
+            <div>
+
+                <center>
+                    <div>
+                        <input type="id" name="id" placeholder="ID">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
+                    </div>
+                </center>
+
+            </div>
+            <button type="button" onClick="nextPage();">認証</button>
+        </form>
+
+        <!--ログイン処理-->
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                id = document.login_form.id.value
+                pwd = document.login_form.pass.value;
+                location.href = Kanure0X + Siro0920 + ".html";
+            }
+        </script>
+
+    </div>
+    
+    </article>
+        
+        <aside id="submenu">
+            <aside id="submenu">
+
+                <div class="subcontents">
+                <h3>カテゴリー</h3>
+                <ul class="subcontents-lists">
+                <li><a href="orignal.html">オリジナル</a></li>
+                <li><a href="fanfic.html">二次創作</a></li>
+                <li><a href="bkg.html">背景作画</a></li>
+                <li><a href="practice.html">イラスト練習</a></li>
+                <li><a href="onedoro.html">ワンドロ</a></li>
+                <li><a href="others.html">その他</a></li>
+                </ul>
+                </div>
+                <div id="ad2">
+                <img src="PR2.png" alt="広告">
+                </div>
+                
+                </aside>
+        </aside>
+        
+        <div id="topic">
+        
+            <div id="topic">
+
+                <aside class="ad3">
+                <img src="PR1.png" alt="広告">
+                </aside>
+                
+                </div>
+
+            <section class="topiccontents">
+            <h3>プロフィール</h3>
+            <p>2023年夏に学校に化けた架空の生徒。年齢は不明である。</p>
+            </section>
+            
+            <section class="topiccontents">
+            <h3>更新情報</h3>
+            <p>色々と工事中</p>
+            </section>
+            
+            <section class="news">
+            <h3>新着情報</h3>
+            <dl>
+            <dt>2024年02月13日</dt>
+            <dd>イラスト追加</dd>
+            <dt>2024年02月13日</dt>
+            <dd>動画投稿</dd>
+            <dt>2024年02月12日</dt>
+            <dd>HP開設</dd>
+            </dl>
+            </section>
+            
+            </div>
+        
+        </main>
+    
+    </header>
+    
+    </div>
+
+    <footer id="footer">
+
+        <ul>
+        <li><a href="picture.html">イラスト</a></li>
+        <li><a href="making.html">メイキング</a></li>
+        <li><a href="lastupload.html">更新情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        
+        <p>Copyright ©2023 Yuji Shi. All Rights Reserved</p>
+        
+        </footer>
+    
+    </body>
+
+</html>
